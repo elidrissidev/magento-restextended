@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Elidrissidev_RestExtended
+ * @author  Mohamed ELIDRISSI <mohamed@elidrissi.dev>
+ * @license https://opensource.org/licenses/MIT  MIT License
+ */
+-->
+<config>
+    <api2>
+        <resources>
+            <order_comment>
+                <privileges>
+                    <admin>
+                        <create>1</create>
+                    </admin>
+                    <restuser>
+                        <create>1</create>
+                    </restuser>
+                </privileges>
+            </order_comment>
+        </resources>
+    </api2>
+</config>

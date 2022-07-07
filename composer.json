@@ -1,0 +1,40 @@
+{
+  "name": "elidrissidev/magento-restextended",
+  "description": "Full REST API implementation for Magento 1.9 and OpenMage.",
+  "version": "0.1.0",
+  "type": "magento-module",
+  "keywords": ["openmage", "openmage-module", "magento", "magento-module"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohamed ELIDRISSI",
+      "email": "mohamed@elidrissi.dev",
+      "homepage": "https://github.com/elidrissidev",
+      "role": "Owner"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/elidrissidev/magento-restextended/issues"
+  },
+  "funding": [
+    {
+      "type": "PayPal",
+      "url": "https://paypal.me/elidrissidev"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "openmage/magento-lts": ">=19.4.0"
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "map": [
+      ["app/code/community/Elidrissidev/RestExtended/etc/api2.xml", "app/code/community/Elidrissidev/RestExtended/etc/api2.xml"],
+      ["app/code/community/Elidrissidev/RestExtended/etc/config.xml", "app/code/community/Elidrissidev/RestExtended/etc/config.xml"],
+      ["app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Admin/V1.php", "app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Admin/V1.php"],
+      ["app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Restuser/V1.php", "app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Restuser/V1.php"],
+      ["app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest.php", "app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest.php"],
+      ["app/etc/modules/Elidrissidev_RestExtended.xml", "app/etc/modules/Elidrissidev_RestExtended.xml"]
+    ]
+  }
+}

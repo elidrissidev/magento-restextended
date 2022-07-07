@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Elidrissidev_RestExtended
+ * @author  Mohamed ELIDRISSI <mohamed@elidrissi.dev>
+ * @license https://opensource.org/licenses/MIT  MIT License
+ */
+-->
+<config>
+    <modules>
+        <Elidrissidev_RestExtended>
+            <version>0.1.0</version>
+        </Elidrissidev_RestExtended>
+    </modules>
+    <global>
+        <models>
+            <elidrissidev_restextended>
+                <class>Elidrissidev_RestExtended_Model</class>
+            </elidrissidev_restextended>
+            <sales>
+                <rewrite>
+                    <api2_order_comment_rest>Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest</api2_order_comment_rest>
+                    <api2_order_comment_rest_admin_v1>Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest_Admin_V1</api2_order_comment_rest_admin_v1>
+                    <api2_order_comment_rest_restuser_v1>Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest_Restuser_V1</api2_order_comment_rest_restuser_v1>
+                </rewrite>
+            </sales>
+        </models>
+    </global>
+</config>
