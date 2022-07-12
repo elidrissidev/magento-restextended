@@ -12,13 +12,22 @@ This is a Magento 1.9/OpenMage extension that aims to provide a full REST API im
 
 3. Go to `System / Cache Management` and flush "Configuration" and "Web Services Configuration" cache.
 
-### Composer (NOT AVAILABLE YET)
+### Composer
 
 For OpenMage users, you can install this package easily by using composer:
 
 ```sh
 $ composer require elidrissidev/magento-restextended
 ```
+
+## Features
+
+This extension adds the following endpoints to the REST API:
+
+- `POST /api/rest/orders/:id/comments` - Add a comment to an Order.
+- `GET /api/rest/orders/comments/:id` - Retrieve Order comment by id
+
+*NOTE: Be sure to grant the necessary permissions to your REST Role.*
 
 ## Contributing
 
