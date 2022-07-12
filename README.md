@@ -2,6 +2,8 @@
 
 This is a Magento 1.9/OpenMage extension that aims to provide a full REST API implementation. It's also fully compatible with my other [HTTP Basic Authentication extension](https://github.com/elidrissidev/magento-api2basicauth).
 
+**:construction: This extension is still in development! :construction:**
+
 ## Installation
 
 ### Manual
