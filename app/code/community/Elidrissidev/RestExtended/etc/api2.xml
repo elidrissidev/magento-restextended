@@ -18,6 +18,12 @@
                         <create>1</create>
                     </restuser>
                 </privileges>
+                <routes>
+                    <route_entity>
+                        <route>/orders/comments/:id</route>
+                        <action_type>entity</action_type>
+                    </route_entity>
+                </routes>
             </order_comment>
         </resources>
     </api2>

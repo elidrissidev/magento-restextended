@@ -13,6 +13,7 @@ class Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest extends Mage_Sale
      * Add comment to order
      * 
      * @param array $data
+     * @return string
      */
     protected function _create(array $data)
     {
@@ -39,6 +40,7 @@ class Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest extends Mage_Sale
 
             $order->save();
             $order->sendOrderUpdateEmail((bool) $notifyCustomer, $comment);
+
             if ($notifyCustomer && $comment) {
                 Mage::getDesign()->setStore($oldStore);
                 Mage::getDesign()->setArea($oldArea);
@@ -49,5 +51,25 @@ class Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest extends Mage_Sale
             Mage::logException($t);
             $this->_critical($t->getMessage(), self::RESOURCE_UNKNOWN_ERROR);
         }
+
+        return $this->_getLocation($historyItem);
+    }
+
+    /**
+     * Retrieve order comment by id
+     * 
+     * @return array
+     */
+    protected function _retrieve()
+    {
+        $comment = Mage::getModel('sales/order_status_history')->load(
+            $this->getRequest()->getParam('id')
+        );
+
+        if (!$comment->getId()) {
+            $this->_critical(self::RESOURCE_NOT_FOUND);
+        }
+
+        return $comment->getData();
     }
 }
