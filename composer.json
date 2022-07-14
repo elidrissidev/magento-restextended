@@ -33,7 +33,6 @@
       ["app/code/community/Elidrissidev/RestExtended/etc/config.xml", "app/code/community/Elidrissidev/RestExtended/etc/config.xml"],
       ["app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Admin/V1.php", "app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Admin/V1.php"],
       ["app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Restuser/V1.php", "app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest/Restuser/V1.php"],
-      ["app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest.php", "app/code/community/Elidrissidev/RestExtended/Model/Sales/Order/Comment/Rest.php"],
       ["app/etc/modules/Elidrissidev_RestExtended.xml", "app/etc/modules/Elidrissidev_RestExtended.xml"]
     ]
   }
