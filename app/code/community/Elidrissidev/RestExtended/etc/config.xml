@@ -19,7 +19,6 @@
             </elidrissidev_restextended>
             <sales>
                 <rewrite>
-                    <api2_order_comment_rest>Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest</api2_order_comment_rest>
                     <api2_order_comment_rest_admin_v1>Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest_Admin_V1</api2_order_comment_rest_admin_v1>
                     <api2_order_comment_rest_restuser_v1>Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest_Restuser_V1</api2_order_comment_rest_restuser_v1>
                 </rewrite>

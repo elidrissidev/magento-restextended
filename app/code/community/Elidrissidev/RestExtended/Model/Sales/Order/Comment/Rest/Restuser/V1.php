@@ -8,6 +8,6 @@
  * @license https://opensource.org/licenses/MIT  MIT License
  */
 class Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest_Restuser_V1 
-    extends Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest
+    extends Elidrissidev_RestExtended_Model_Sales_Order_Comment_Rest_Admin_V1
 {
 }
